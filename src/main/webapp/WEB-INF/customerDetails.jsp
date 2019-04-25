@@ -63,7 +63,7 @@ th {
 		<th width="120">Customer Name</th>
 		<th width="120">Email</th>
 		<th width="60">Edit</th>
-		<th width="60">Delete</th>
+		<th width="60">Delete</th>     
 	</tr>
 	<c:forEach items="${listOfCustomers}" var="customer">
 		<tr>
