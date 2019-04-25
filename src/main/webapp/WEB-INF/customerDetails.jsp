@@ -37,7 +37,7 @@ th {
 <form:form method="post" modelAttribute="customer" action="${pageContext.request.contextPath}/addCustomer">
 <table>
 		<tr>
-			<th colspan="2">Add New   Customer</th>
+			<th colspan="2">Add Customer Karthik</th>
 		</tr>
 		<tr>
 	<form:hidden path="id" />
