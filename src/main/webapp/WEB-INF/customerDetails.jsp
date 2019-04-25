@@ -37,7 +37,7 @@ th {
 <form:form method="post" modelAttribute="customer" action="${pageContext.request.contextPath}/addCustomer">
 <table>
 		<tr>
-			<th colspan="2">Add Customer   Karthik</th>
+			<th colspan="2">Add Customer</th>
 		</tr>
 		<tr>
 	<form:hidden path="id" />
@@ -55,7 +55,7 @@ th {
 	</table> 
 </form:form>
 </br>
-<h3>Customer Listtttttttt</h3>
+<h3>Customer List</h3>
 <c:if test="${!empty listOfCustomers}">
 	<table class="tg">
 	<tr>
