@@ -24,12 +24,12 @@ public class CustomerController {
 		List<Customer> listOfCustomers = customerService.getAllCustomers();
 		model.addAttribute("customer", new Customer());
 		model.addAttribute("listOfCustomers", listOfCustomers);
-		return "customerDetails";
+		return "getAllCustomers";
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String goToHomePage() {
-		return "redirect:/getAllCustomers";
+		return "HomePage";
 	}
 	
 	@RequestMapping(value = "/getCustomer/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
