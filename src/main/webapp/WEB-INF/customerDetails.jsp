@@ -59,7 +59,7 @@ th {
 <c:if test="${!empty listOfCustomers}">
 	<table class="tg">
 	<tr>
-		<th width="80">Id</th>
+		<th width="80">Id</th>   
 		<th width="120">Customer Name</th>
 		<th width="120">Email</th>
 		<th width="60">Edit</th>
