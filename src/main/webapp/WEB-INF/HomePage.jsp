@@ -5,6 +5,9 @@
 <link href="images/logo.jpeg" rel="shortcut icon">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/validations/validation.js"></script>
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -85,7 +88,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap-Min-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="css/sweetalert.css">
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+	
 <style type="text/css">
 .slideshow {
   background: #000;
@@ -105,6 +110,29 @@
 </style>
 
 <style>
+div#registration-model {
+    border: 1px solid #7f7f7f;
+    border-bottom: none;
+    cursor: pointer;
+    width: 170px;
+    height: 34px;
+    overflow: hidden;
+    background: #e21d1d;
+    color: #ffffff;
+    padding: 2px 0px 2px 0px;
+    position: fixed;
+    top: 200px;
+    right: -68px;
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 9999999;
+    font-size: 18px;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -214,10 +242,33 @@
         height: 30px;
     }
 </style>
+<script type="text/javascript">
+	function submitRegistration(){
+		validations('required');
+		if($("input[name='training_type']:checked").val() == undefined){
+			$('.train_type').show();
+			return false;
+		}else{
+			//$('.train_type').hide();
+			$('#registration').removeClass("fade");
+			$('.register').hide();
+			swal("Registered Successfully!", "", "success");
+			//location.reload();
+			return true;
+		}
+	}
+ 	function removeTag(){
+		$('.train_type').hide();
+		return true;
+	}
+
+	 </script>
 </head>
 <body>
+<form id="homepage" autocomplete="off">
 <%@ include file="general/header.jsp" %>
 <!-- banner -->
+<div id="registration-model" class="registration-model " data-toggle="modal" data-target="#registration" aria-label="Register Now">Register Now</div>
 <div class="slideshow">
 <div class="banner" id="slideshow">
 	<div class="agile_banner_info">
@@ -262,6 +313,87 @@
 					</div>
 	 </div>
 	</section>
+		<!-- Registration -->
+		<div class="container register">
+			<div class="modal fade" id="registration" role="dialog">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+							<h5 class="modal-title">Registration Form</h5>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-4">
+									<label>Person Name</label>
+								</div>
+							  <div class="col-md-8">
+								    <div class="input-group">
+								      <span class="input-group-btn">
+								        <button class="btn btn-default" type="button"><i class="fa fa-user"></i></button>
+								      </span>
+								      <input type="text" id="first_name" name="first_name" maxlength="50"
+										class="form-control required">
+								    </div>
+								  </div>
+							</div>
+							<div class="row mt-4">
+								<div class="col-md-4">
+									<label>Email</label>
+								</div>
+								<div class="col-md-8">
+								<div class="input-group">
+								      <span class="input-group-btn">
+								        <button class="btn btn-default" type="button"><i class="fa fa-envelope"></i></button>
+								      </span>
+									<input type="text" id="email_id" name="email_id" class="form-control required" >
+										</div>
+								</div>
+							</div>
+							<div class="row mt-4">
+								<div class="col-md-4">
+									<label>Mobile Number</label>
+								</div>
+								<div class="col-md-8">
+								<div class="input-group">
+								      <span class="input-group-btn">
+								        <button class="btn btn-default" type="button"><i class="fa fa-phone"></i></button>
+								      </span>
+									<input type="text" id="mobile_no" name="mobile_no" maxlength="10" onkeyup="numericOnly(this)"
+										class="form-control required">
+										</div>
+								</div>
+							</div>
+							<div class="row mt-4">
+								<div class="col-md-4">
+									<label>Training Type</label>
+								</div>
+								<div class="row col-md-8" style="margin-left: 2px;">
+								<label class="radioCss">Online&emsp;&emsp;
+								<input type="radio" id="training_type_1" name="training_type" onclick="removeTag()"
+										value="1">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="radioCss">Classroom 
+								<input type="radio" id="training_type_2" name="training_type" onclick="removeTag()"
+										value="2">
+								  <span class="checkmark"></span>
+								</label>
+								</div>
+							</div>
+							<div class="row train_type" style="display: none;">
+							<span style="color: red;margin-left: 15px;">Required Training Type</span>
+							</div>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-success" onclick="submitRegistration()">Submit</button>
+							<button type="button" class="btn btn-danger"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	 <!-- //what we do -->
 <!-- news -->
 	<section class="news py-5" id="about">
@@ -506,5 +638,6 @@
 	</section>
 	<%@ include file="general/footer.jsp" %>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="glyphicon glyphicon-chevron-up"></i></button>
+	</form>
 </body>
 </html>
