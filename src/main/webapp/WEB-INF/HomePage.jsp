@@ -1,19 +1,10 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Agriculture</title>
-<link href="images/six.jpg" rel="shortcut icon">
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<meta name="keywords" content="Reaping Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<link href="images/logo.jpeg" rel="shortcut icon">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -23,8 +14,47 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+	
+	 
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    document.getElementById("myBtn").style.display = "block";
+	  } else {
+	    document.getElementById("myBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	
+	<script type="text/javascript">
+	function mockOne() {
+		alert("Karthik1");
+		
+	}
+	function mockTwo() {
+		
+		alert("Karthik2");
+	}
+	
+	function mockThree() {
+		alert("Karthik3");
+	
+	}
+	
+	</script>
+	 
+	
+	
 	<script type="text/javascript">
 	$(function() {
 		  // set `$.fx.interval` at `0`
@@ -51,22 +81,12 @@
 		});
 	
 	</script>
-	<!--// Meta tag Keywords -->
-    <!-- css files -->
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap-Min-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
-	<!-- //css files -->
-	<!--web font-->
-	  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
-	<!--//web font-->
-	<style type="text/css">
-	link {
-	border-radius : 50%;
-	
-	}
-	/* set `#slideshow` parent background color */
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+<style type="text/css">
 .slideshow {
   background: #000;
   display:block;
@@ -79,42 +99,124 @@
   display: block;
   opacity: 0.0;
   background-color: #000;
-  /* 
-     set background images as `url(/path/to/image)` here, 
-     separated by commas 
-  */
   background-image: url(../images/four.jpg),url(../images/six.jpg),url(../images/three.jpg);
   background-size: cover, 0px, 0px, 0px;
-/* set transtitions at 3000ms 
-  -webkit-transition: background-image 3000ms linear;
-  -moz-transition: background-image 3000ms linear;
-  -ms-transition: background-image 3000ms linear;
-  -o-transition: background-image 3000ms linear;
-  transition: background-image 3000ms linear;
-    */
 }
-	
-	</style>
+</style>
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.logo img {
+     
+     height: 60px;
+}
+.mt-1, .my-1 {
+    margin-top: 2.07rem !important;
+}
+
+</style>
+<style>
+    .white {
+        color: white;
+    }
+
+    .btn-lg {
+        font-size: 38px;
+        line-height: 1.33;
+        border-radius: 6px;
+    }
+
+    .box > .icon {
+        text-align: center;
+        position: relative;
+    }
+
+    .box > .icon > .image {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        width: 88px;
+        height: 88px;
+        border: 7px solid white;
+        line-height: 88px;
+        border-radius: 50%;
+        background: #63B76C;
+        vertical-align: middle;
+    }
+
+    .box > .icon:hover > .image {
+        border: 4px solid black;
+    }
+
+    .box > .icon > .image > i {
+        font-size: 40px !important;
+        color: #fff !important;
+    }
+
+    .box > .icon:hover > .image > i {
+        color: white !important;
+    }
+
+    .box > .icon > .info {
+        margin-top: -24px;
+        background: rgba(0, 0, 0, 0.04);
+        border: 1px solid #e0e0e0;
+        padding: 15px 0 10px 0;
+    }
+
+        .box > .icon > .info > h3.title {
+            color: #222;
+            font-weight: 500;
+        }
+
+        .box > .icon > .info > p {
+            color: #666;
+            line-height: 1.5em;
+            margin: 20px;
+        }
+
+    .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+        color: #222;
+    }
+
+    .box > .icon > .info > .more a {
+        color: #222;
+        line-height: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .box > .icon:hover > .info > .more > a {
+        color: #000;
+        padding: 6px 8px;
+        border-bottom: 4px solid black;
+    }
+
+    .box .space {
+        height: 30px;
+    }
+</style>
 </head>
 <body>
-<header>	
-	<nav class="mnu">
-		<div class="container">
-            <div class="logo" id="logo">
-                <h1><a href="index.html"><!-- <img src="images/six.jpg" class="rounded-circle" height="60px" width="100px"/>&ensp; -->AGRIMENTORS</a></h1>
-            </div>
-				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-                <input type="checkbox" id="drop">
-                    <ul class="menu mt-1">
-                        <li class="mr-lg-4 mr-3 active"><a href="#">Home</a></li>
-						<li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Services</a></li>
-                        <li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About</a></li>
-						<li class="mr-lg-4 mr-3"><a href="#news" class="scroll">News</a></li>
-                        <li><a href="#contact" class="scroll">Contact</a></li>
-                    </ul>
-		</div>
-    </nav>
-</header>
+<%@ include file="general/header.jsp" %>
 <!-- banner -->
 <div class="slideshow">
 <div class="banner" id="slideshow">
@@ -140,19 +242,19 @@
 			</div>
 			<div class="row about-info-grids text-center py-lg-5 py-3 mt-3">
 							<div class="col-md-4 about-info about-info1">
-								<span class="fa fa-desktop"></span>
+								<span class="fa fa-desktop fa-spin"></span>
 								<h4>Online Training</h4>
 								<p>Live session over virtual classrooms allowing interaction with industry experts on the latest technology without constraints of location.</p>
 								Read More >
 							</div>
 							<div class="col-md-4 about-info about-info2">
-								<span class="fa fa-pencil-square-o"></span>
+								<span class="fa fa-pencil-square-o fa-spin"></span>
 								<h4>Mock Tests</h4>
 								<p>A mock test is a fake test that gives you experience of a real test situation.We will set the paper, correct and analyse your performance, just like a real test.</p>
 							Read More >
 							</div>
-							<div class="col-md-4 about-info about-info3">
-								<span class="fa fa-users"></span>
+							<div class="col-md-4 about-info about-info3 ">
+								<span class="fa fa-users fa-spin"></span>
 								<h4>Classroom Training</h4>
 								<p>State-of- Art facility with comfortable and spacious classrooms for inperson interaction and training programs by industry experts.</p>
 							Read More >
@@ -166,56 +268,146 @@
 		<div class="container py-lg-5">
 			<div class="w3l_head">
 				<h3 class="heading text-center">About Us</h3>
-				<p class="subs mt-4 text-center mx-auto">Integer porttitor mollisar lorem, at molestie arcu pulvinar ut</p>
+				<p class="subs mt-4 text-center mx-auto">Full fledged  Lab with state of the art PCs connected in network</p>
 			</div>		
 				<div class="row news-grids py-lg-5 py-3 mt-3 text-center">
 						<div class="col-md-4 newsgrid1">
 							<img src="images/g1.jpg" alt="news image" class="img-fluid">
 							<div class="news_btm mt-4">
-								<h6>Etiam eu ante risus</h6>
-								<p>Praesent semper </p>
+								<h6>Our Vision</h6>
+								<p>Success</p>
 							</div>
 						</div>
 						<div class="col-md-4 mt-md-0 mt-5 newsgrid2">
 							<img src="images/g2.jpg" alt="news image" class="img-fluid">
 							<div class="news_btm mt-4">
-								<h6>Etiam eu ante risus</h6>
-								<p>Praesent semper </p>
+								<h6>Our Mission</h6>
+								<p>realty </p>
 							</div>
 						</div>
 						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
 							<img src="images/g3.jpg" alt="news image" class="img-fluid">
 							<div class="news_btm mt-4">
-								<h6>Etiam eu ante risus</h6>
-								<p>Praesent semper </p>
+								<h6>Our Goals</h6>
+								<p>achieve </p>
 							</div>
 						</div>
 				</div>
-			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est.</p>
+			<p class="text-center">
+			
+			At Agrimentors you are guaranteed best in class training as we team up the most efficient, professional and dedicated trainers who are subject matter experts in their respective area of specialization.
+			
+			</p>
 		</div>
 	</section>
-<!-- //news -->
-<!-- news-bottom -->
-<!-- <section class="news-bottom py-5">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section class="news-bottom py-5" id="mocktests">
 	<div class="container py-lg-5">
 		<div class="newsgrid1 text-center">
 			<div class="w3l_head1">
-				<h4 class="heading text-center"> porttitor mollisar lorem</h3>
-				<p class="subs1 mt-4 text-center mx-auto">Integer porttitor mollisar lorem, at molestie arcu pulvinar ut</p>
+				<h4 class="heading text-center"> Mock Tests</h3>
+				<p class="subs1 mt-4 text-center mx-auto">Experience the test</p>
 			</div>
-			<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. pellentesque mi non laoreet eleifend porttitor mollisar</p>
+			<!-- <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. pellentesque mi non laoreet eleifend porttitor mollisar</p> -->
+		
+		<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-pencil btn-lg white"></span> </div>
+                    <div class="info">
+                        <h3 class="title" style="margin-top: 7px;">Subject 1</h3>
+                        <p>
+                            12 Mock Tests are available.
+                        </p>
+                         
+                            <input type="button" class="btn btn-md btn-success"  value="Attempt Now"  onclick="mockOne()" role="button"/>
+                         
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-envelope btn-lg white"></span></div>
+                    <div class="info">
+                        <h3 class="title" style="margin-top: 7px;">Subject 2</h3>
+                        <p>
+                            12 Mock Tests are available . 
+                        </p>
+                        <input type="button" class="btn btn-md btn-success"  value="Attempt Now" onclick="mockTwo()" role="button"/> 
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="box">
+                <div class="icon">
+                    <div class="image"><span class="glyphicon glyphicon-file btn-lg white"></span></div> 
+                    <div class="info">
+                        <h3 class="title" style="margin-top: 7px;">Subject 3</h3>
+                        <p>
+                            12 Mock Tests are available.
+                        </p>
+                        <input type="button" class="btn btn-md btn-success"  value="Attempt Now"  onclick="mockThree()" role="button"/>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		
+		
+		
+		
+		
+		
 		</div>
 			
 		
 	</div>
-</section> -->
-<!-- //news-bottom -->
-<!-- blog -->	
-<section class="news-bottom py-5" id="news">
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<section class="news py-5" id="news">
 	<div class="container py-lg-5">
 			<div class="w3l_head">
 				<h4 class="heading text-center">Our News</h4>
-				<p class="subs mt-4 text-center mx-auto">Integer porttitor mollisar lorem, at molestie arcu pulvinar ut</p>
+				<p class="subs mt-4 text-center mx-auto">Flash News here</p>
 			</div>
 		<div class="row blog_w3l_top py-lg-5 py-3 mt-3 ">
 			<div class="col-lg-6 blog_w3l_left">
@@ -225,8 +417,8 @@
 					</div>
 					<div class="col-md-7 blog_w3l-2">
 						
-						<h3>pellentesque mi non</h3>
-						<p class="mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+						<h3>Summer Internship Program</h3>
+						<p class="mt-3">Hot summer cool internship Hot summer cool internship Hot summer cool internship Hot summer cool internship.</p>
 					</div>
 				</div>
 				<div class="row blog_w3l_left2">
@@ -235,8 +427,8 @@
 					</div>
 					<div class="col-md-7 blog_w3l-2">
 						
-						<h3>pellentesque mi non</h3>
-						<p class="mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+						<h3>Placement Assistance</h3>
+						<p class="mt-3">Guaranteed  Placement Assistance Guaranteed  Placement Assistance Guaranteed  Placement Assistance Guaranteed  Placement Assistance.</p>
 					</div>
 				</div>
 				
@@ -248,8 +440,8 @@
 					</div>
 					<div class="col-md-7 blog_w3l-2">
 						
-						<h3>pellentesque mi non</h3>
-						<p class="mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+						<h3>New Batches</h3>
+						<p class="mt-3">New Batches Starts from Dated New Batches Starts from Dated New Batches Starts from Dated New Batches Starts from Dated .</p>
 					</div>
 				</div>
 				<div class="row blog_w3l_left2">
@@ -258,8 +450,8 @@
 					</div>
 					<div class="col-md-7 blog_w3l-2">
 						
-						<h3>pellentesque mi non</h3>
-						<p class="mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.</p>
+						<h3>Careers</h3>
+						<p class="mt-3">Careers at Agrimentors Careers at Agrimentors Careers at Agrimentors Careers at Agrimentors.</p>
 					</div>
 				</div>
 				
@@ -267,7 +459,7 @@
 			</div>
 		</div>
 </section>
-	<!-- //blog -->	
+<!-- //blog -->	
 	<!-- foot-1 -->
 	 <section class="foot-1 py-5" id="contact">
 		<div class="container py-lg-5">
@@ -312,21 +504,7 @@
 			
 		</div>
 	</section>
-	<div class="foot_bottom">
-		<div class="container">
-			<div class="cpy-right text-center py-5">
-				<ul class="social_section_1info mb-lg-4">
-					<li><a href="https://www.facebook.com/"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://twitter.com/"><span class="fa fa-twitter"></span></a></li>
-					<li><a href="https://www.google.com/"><span class="fa fa-google"></span></a></li>
-					<li><a href="https://www.linkedin.com"><span class="fa fa-linkedin"></span></a></li>
-				</ul>
-				<p>@2019 Agrimentors. All rights reserved | Design by
-					<a href="#"> Developers Buzz.</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	 <!-- //foot-1 -->
+	<%@ include file="general/footer.jsp" %>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="glyphicon glyphicon-chevron-up"></i></button>
 </body>
 </html>
