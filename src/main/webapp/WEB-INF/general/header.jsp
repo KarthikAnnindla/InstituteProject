@@ -1,10 +1,10 @@
 
  
 <header>	
-	<nav class="mnu  navbar-fixed-top">
+	<nav class="mnu">
 		<div class="container">
             <div class="logo" id="logo">
-                <h1><a href="index.html">  <img src="images/logo.jpeg" class="rounded-circle"/>&ensp;  AGRIMENTORS</a></h1>
+                <h1><a href="#">  <img src="images/logo.jpeg" class="rounded-circle"/>&ensp;  AGRIMENTORS</a></h1>
             </div>
 				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
                 <input type="checkbox" id="drop">

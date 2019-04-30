@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Agriculture</title>
+<title>AGRIMENTORS</title>
 <link href="images/logo.jpeg" rel="shortcut icon">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -41,16 +41,16 @@
 	
 	<script type="text/javascript">
 	function mockOne() {
-		alert("Karthik1");
+		//alert("Karthik1");
 		
 	}
 	function mockTwo() {
 		
-		alert("Karthik2");
+		//alert("Karthik2");
 	}
 	
 	function mockThree() {
-		alert("Karthik3");
+		//alert("Karthik3");
 	
 	}
 	
@@ -395,6 +395,170 @@ div#registration-model {
 			</div>
 		</div>
 	 <!-- //what we do -->
+	 
+	 
+	 
+	 <!-- mock test -->
+	 <div class="container register">
+			<div class="modal fade" id="mocktest" role="dialog" _style="display: block;">
+				<div class="modal-dialog modal-md" style="overflow-y:initial;overflow-x:hidden;">
+					<div class="modal-content">
+						<div class="modal-header">
+							<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+							<h5 class="modal-title">Subject Test</h5>
+						</div>
+						<div class="modal-body" style="overflow-y:auto;height: 400px;" >
+						<div class="row px-lg-3"><label>1.</label>What is your name?</div>
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_1" name="quest_1" value="1"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						 <div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_2" name="quest_1" value="2"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_3" name="quest_1" value="3"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_4" name="quest_1" value="4"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						
+						<div class="row px-lg-3"><label>1.</label>What is your name?</div>
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_1" name="quest_1" value="1"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						 <div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_2" name="quest_1" value="2"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_3" name="quest_1" value="3"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_4" name="quest_1" value="4"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						
+						
+						<div class="row px-lg-3"><label>1.</label>What is your name?</div>
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_1" name="quest_1" value="1"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						 <div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_2" name="quest_1" value="2"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_3" name="quest_1" value="3"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_4" name="quest_1" value="4"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-3"><label>1.</label>What is your name?</div>
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_1" name="quest_1" value="1"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						 <div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_2" name="quest_1" value="2"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_3" name="quest_1" value="3"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_4" name="quest_1" value="4"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						
+						
+						<div class="row px-lg-3"><label>1.</label>What is your name?</div>
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_1" name="quest_1" value="1"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						 <div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_2" name="quest_1" value="2"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_3" name="quest_1" value="3"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						<div class="row px-lg-5"> 
+						<label class="radioCss">Karthik &emsp;&emsp;
+						<input type="radio" id="ques_1_opt_4" name="quest_1" value="4"> 
+						<span class="checkmark"></span> </label>
+						</div>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-success" onclick="submitRegistration()">Submit</button>
+							<button type="button" class="btn btn-danger"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 <!-- mock test -->
 <!-- news -->
 	<section class="news py-5" id="about">
 		<div class="container py-lg-5">
@@ -433,22 +597,6 @@ div#registration-model {
 		</div>
 	</section>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<section class="news-bottom py-5" id="mocktests">
 	<div class="container py-lg-5">
 		<div class="newsgrid1 text-center">
@@ -470,8 +618,8 @@ div#registration-model {
                             12 Mock Tests are available.
                         </p>
                          
-                            <input type="button" class="btn btn-md btn-success"  value="Attempt Now"  onclick="mockOne()" role="button"/>
-                         
+                            <input type="button" id="registration-model"   data-toggle="modal" data-target="#mocktest" class="btn btn-md btn-success"  value="Attempt Now"    role="button"/>
+                         	
                     </div>
                 </div>
                 <div class="space"></div>
